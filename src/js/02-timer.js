@@ -27,7 +27,7 @@ const options = {
     const dateNow = Date.now();
 
     if (selectedDate < dateNow) {
-      Notify.failurenpm('Please choose a date in the future');
+      Notify.failure('Please choose a date in the future');
       startButtonEl.disabled = true;
       return;
     }
